@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.header {
+  height: 56px;
+  width: 100%;
+  box-shadow: 0 0 10px #dddddd;
+  background: white;
+  position: fixed;
+  top: 0;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.header-logo {
+  height: 50px;
+  margin-top: 8px;
+}
+
+.header-right a{
+  line-height: 56px;
+  color: #5a5c5f;
+  margin-left: 5px;
+  font-size: 16px;
+  padding: 16px 5px;
+}
+
+.header-right a:hover {
+  background: #e2f1ff;
+  transition: background 1s 0.5s;
+}
+
+.container {
+  max-width: 980px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.main-visual {
+  padding-top: 140px 0 100px;
+  background-image: url("images/hiroshi.jpg");
+  height: auto;
+  background-size: cover;
+  color: #ffffff;
+  text-align: left;
+}
+
+.top-title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.top-subtitle {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.main-visual dt,dd{
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#unlike {
+  opacity: 0;
+  color: black;
+  font-weight: bold;
+}
+
+#unlike:hover {
+  opacity: 1;
+  transition: opacity 1s 0.3s;
+}
+
+.main-visual strong {
+  color: red;
+  text-shadow: 1px 1px 1px black;
+}
+
+.main-container {
+  padding: 30px 0;
+  color: #5a5c5f;
+  text-align: center;
+}
+
+.main-container h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#weLovedEachOther {
+  width: 400px;
+  height: auto;
+  box-shadow: 2px 2px 4px #b7b7b7;
+  border-radius: 5px;
+}
+
+.Mah-jongg {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.Mah-jongg table {
+  table-layout: auto;
+  margin-bottom: 20px;
+  border: solid 1px blue;
+}
+
+caption:first-of-type {
+  color: green;
+}
+
+tbody {
+  color: green;
+}
+
+#sensei{
+  width: 400px;
+}
+
+.footer {
+  height: 60px;
+  background: #2f3a44;
+  color: #e8e8e8;
+}
