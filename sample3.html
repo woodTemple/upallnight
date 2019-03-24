@@ -8,6 +8,8 @@
   <meta name="keywords" content="木寺哲平,でぶ,社蓄">
   <link rel="stylesheet" href="./css/resetCSS.css" media="all">
   <link rel="stylesheet" href="./css/sample.css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/sample.js"></script>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
 
   <nav id="gnav">
     <ul>
-      <li><a href="./sample.html" >Top</a></li>
+      <li><a href="./sample.html">Top</a></li>
       <li><a href="./sample0.html">賢者の石</a></li>
       <li><a href="./sample1.html">秘密の扉</a></li>
       <li><a href="./sample2.html">死の秘宝</a></li>
@@ -31,8 +33,49 @@
   </nav>
 
   <div id="contents">
-    <strong>以下に電話カモン！！<br>TEL:080-6128-7161</strong>
+    <p><strong>以下に電話カモン！！<br>TEL:080-6128-7161</strong></p>
   </div>
+  <p id="inScript"></p>
+  <!--
+  <form method="post" action="CGIのURI">
+    <p>
+      氏名：<input type="text" name="氏名" /><br>
+      性別：
+      <input type="radio" name="性別" value="男" checked="checked" /> 男<br>
+      <input type="radio" name="性別" value="女" /> 女<br>
+      所持品：
+      <input type="checkbox" name="properties" value="CellPhone" /> 携帯電話<br>
+      <input type="checkbox" name="properties" value="Car" /> 自動車<br>
+      <input type="checkbox" name="properties" value="Cottage" /> 別荘　<br>
+      好きな果物：
+      <select name="好きな果物">
+        <option>りんご</option><br>
+        <option>みかん</option><br>
+        <option>バナナ</option><br>
+        <option>パイナップル</option>
+      </select>
+      <textarea name="freeans" rows="4" cols="40">自由に意見を記述してください</textarea><br>
+      <input type="submit" value="送信" />　<br>
+      <input type="reset" value="取り消し" /><br>
+    </p>
+  </form>
+<br><br><br><br><br>
+-->
+  <form class="">
+    名前：<input type="text" name="name" value="キテラ" /><br>
+
+    種族：<br>
+    <input type="radio" name="type" value="巨人"> 巨人<br>
+    <input type="radio" name="type" value="オーク"> オーク<br>
+    <input type="radio" name="type" value="アニ豚"> アニ豚<br>
+    <input id="btn" type="submit" value="送信">
+  </form>
+
+  <div id="addC">
+  </div>
+  <br><br><br><br><br>
+
+
 
   <a href="#top">
     <img id="jump" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr86sz2TpL0ZgpLJqoYFJo2JR3WBot84QpUr3UkXESrWIVkDE7Ew" width="40">
@@ -41,6 +84,7 @@
   <footer>
     <small>Copyright:三菱総研DCS株式会社</small>
   </footer>
+
 </body>
 
 </html>
