@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+body {
+  width: 100%;
+}
+
+header {
+  margin-bottom: 5%;
+}
+
+#opening {
+  display: none;
+}
+
+#mainContents {
+  width: 100%;
+}
+
+/* グローバルナビゲーションの設定 */
+
+#gnav {
+  position:absolute;
+  width: 100%;
+  /* margin-top: 5%; */
+}
+
+#gnav ul{
+  width: 100%;
+	overflow: hidden;
+  list-style: none;
+
+}
+
+#gnav li{
+  box-sizing: border-box;
+  width: 25%;
+	float: left;
+}
+
+#gnav a{
+  position: relative;
+	display: block;
+	width: 100%;
+  padding: 2% 0;
+  box-sizing: border-box;
+  border: solid 1px black;
+  text-align: center;
+  text-decoration: none;
+  background: #424242;
+  color: white;
+}
+
+#gnav.sticky {
+  position: fixed;
+  top: 0;
+}
+/* jQueryお試し */
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+#gnav a .bg span {
+  display: block;
+  box-sizing: border-box;
+  padding: 2% 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #FAAC58;
+}
+
+/* 各セクションの設定 */
+
+section {
+  width: 100%;
+  margin-bottom: 10%;
+  /* margin-bottom: 30px; */
+}
+
+/* ストーリの設定 */
+#story {
+  padding-top: 5%;
+}
+
+#story > p {
+  text-align: center;
+}
+
+/* キャラクター紹介の設定 */
+.character {
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  /* margin-bottom: 10px; */
+}
+
+.character img {
+  width: 50%;
+  height: auto;
+  /* float:left; */
+}
+
+.character p {
+  margin-left: 2%;
+  width: 50%;
+  height: auto;
+  /* float:left; */
+  /* margin-left: 20px; */
+  /* text-align: center; */
+}
+
+/* .clearfixed:after {
+  clear: both;
+  content: "";
+  display: block;
+} */
