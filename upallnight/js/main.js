@@ -1,4 +1,5 @@
 $(function() {
+
   let duration = 200;
 
   /**
@@ -44,11 +45,11 @@ $(function() {
   });
 
 
-
   $("#mainContents").css("display", "none");
-  $("#opening2").css("display", "none");
+  $("#openning2").css("display", "none");
+
   setTimeout(function() {
-    $('#openning1').fadeOut("slow");
+    $('#openning1').fadeOut("slow")
   }, 3000);
 
   setInterval(function() {
@@ -58,24 +59,37 @@ $(function() {
   }, 10);
 
   setTimeout(function() {
-    $("#opText1").text("「 ねえ、 「Man in The Mirror」　って知ってる？ 」");
+    $("#opText1").text("「こんにちは、池くん（可変）」");
   }, 0);
+
+  setTimeout(function() {
+    $("#opText1").text("突然、鏡の中の自分に話しかけられた");
+  }, 1000);
+
+  setTimeout(function() {
+    $("#opText1").text("高校2年の夏、その転機は突然訪れた…");
+  }, 2000);
 
 
   setTimeout(function() {
-    $("#opText2").html("「 日没後、數十分だけ体感できる、<br>空が魔法のような薄明かりに包まれる時間帯を<br>「Man in The Mirror」って言うんだって 」");
+    $("#opText2").html("変わるのは自分だ<br>変えるのは自分だ");
   }, 5000);
 
+  setTimeout(function() {
+    $("#opText2").html("全てはこれから始まる….");
+  }, 7000);
 
   setInterval(function() {
     $('#openning2').animate({
-      backgroundPositionY: '+=' + 0.1 + '%'
-    }, 5);
+      backgroundPositionY: '+=' + 0.2 + '%'
+    }, 10);
   }, 10);
+
 
   setTimeout(function() {
     $("#openning2").fadeIn();
   }, 4000);
+
 
   setTimeout(function() {
     $('#openning2').fadeOut("slow");
@@ -84,6 +98,6 @@ $(function() {
 
   setTimeout(function() {
     $("#mainContents").fadeIn();
-  }, 8000);
+  }, 9000);
 
 });

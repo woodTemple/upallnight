@@ -13,6 +13,7 @@ header {
   width: 100%;
   height: 100%;
   background-image: url("../img/opening1.jpg");
+  background-size: 100% auto;
   background-position:0% 0%;
 
 }
@@ -20,6 +21,7 @@ header {
   width: 100%;
   height: 100%;
   background-image: url("../img/opening2.jpg");
+  background-size: 100% auto;
   background-position:0% 0%;
 }
 
