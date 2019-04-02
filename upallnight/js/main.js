@@ -81,14 +81,14 @@ $(function() {
 
   setInterval(function() {
     $('#openning2').animate({
-      backgroundPositionY: '+=' + 0.2 + '%'
+      backgroundPositionY: '+=' + 0.1 + '%'
     }, 10);
   }, 10);
 
 
   setTimeout(function() {
     $("#openning2").fadeIn();
-  }, 4000);
+  }, 3000);
 
 
   setTimeout(function() {
@@ -98,6 +98,6 @@ $(function() {
 
   setTimeout(function() {
     $("#mainContents").fadeIn();
-  }, 9000);
+  }, 11000);
 
 });
