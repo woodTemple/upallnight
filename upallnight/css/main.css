@@ -9,7 +9,7 @@ header {
  display: block;
  width: 100%;
  height: 80vh;
- background-image: url("../img/head-2.jpg");
+ background-image: url("../img/head.jpg");
  background-size: 100% 100%;
 }
 
@@ -159,12 +159,37 @@ section {
  background-position :center;
 }
 
+.system-bg {
+  background-image: url("../img/BK_back.jpg");
+  background-repeat : no-repeat;
+  display: block;
+  margin:auto;
+  text-align: center;
+  background-position :center;
+}
+
+.system-cl {
+  background-color: rgba(255,255,255,0.3);
+}
 /* ストーリの設定 */
 #story {
   padding-top: 5%;
 }
 
-#story > p {
+.description {
+ text-align: center;
+ margin: auto;
+ width: 60vw;
+ color: #5d1669;
+ border-top: medium solid #945198;
+ border-bottom: medium solid #945198;
+ background-image:
+   linear-gradient(rgba(241, 207, 164, 0.5) .1em, transparent .1em);
+ background-size: 100% 2em;
+ line-height: 2em;
+}
+
+.description-system {
  text-align: center;
  margin: auto;
  width: 60vw;
@@ -178,23 +203,96 @@ section {
 }
 
 /* キャラクター紹介の設定 */
-.character {
+#characters {
+  /* height: 150vh; */
+}
+
+#allCharacter {
+  margin: 0 auto;
   width: 100%;
+  /* height: 100vh; */
+}
+#selectedCharacter {
+  width: 100%;
+  /* height: 70vh; */
+  overflow: hidden;
+  position: relative;
+}
+
+.character {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .character img {
-  width: 50%;
-  height: 70vh;
-  margin-left: 5%;
+  width: 30vw;
+  margin-left: 20vw;
 }
 
 .character p {
-  margin-left: 5%;
-  width: 50%;
-  height: 100%;
+  background: url("../img/back2.jpg") no-repeat;
+  margin-left: 5vw;
+  width: 50vw;
+}
+
+#cnav {
+  width: 100%;
+  margin: 0 5%;
+}
+
+#cnav ul {
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#cnav ul li {
+  width: 25%;
+  float: left;
+}
+#cnav ul li a {
+  display: block;
+  width: 100%;
+}
+
+#cnav ul li.active {
+  filter:alpha(opacity=100)!important;
+  -moz-opacity: 1!important;
+  opacity: 1!important;
+}
+
+/* ゲームシステムの設定 */
+
+#spec {
+  width:50%;
+  margin: 3% auto;
+  /* border-bottom:1px solid #999; */
+  letter-spacing:-0.31em;
+  letter-spacing:normal;
+  word-spacing:-0.43em;
+}
+
+#spec dt,
+#spec dd {
+  display:inline-block;
+  /* display:inline; */
+  zoom:1;
+  letter-spacing:normal;
+  word-spacing:normal;
+  vertical-align:top;
+  width:46%;
+  padding:1% 2% 1%;
+  margin:0;
+}
+
+#spec dt {
+  margin-right: -1%;
+  border-bottom: 0.2em solid rgba(241, 207, 164, 1);
+}
+
+#spec dd {
+  border-bottom: 0.2em solid rgba(241, 207, 164, 0.5);
 }
