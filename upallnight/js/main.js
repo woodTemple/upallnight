@@ -5,9 +5,21 @@ $(function() {
   let setId = '#allCharacter';
   let fadeTime = 1000;
   let delayTime = 5000;
-  let storage = localStorage;
+  let yourName = escapeHtml(localStorage.name);
 
-$("#yourName").text(storage.name);
+  function escapeHtml(str) {
+    if(str == null || str == ""){
+      return "ひろし";
+    }
+	    str = str.replace(/&/g, '&amp;');
+	    str = str.replace(/</g, '&lt;');
+	    str = str.replace(/>/g, '&gt;');
+	    str = str.replace(/"/g, '&quot;');
+	    str = str.replace(/'/g, '&#39;');
+	    return str;
+	}
+
+$("#yourName").text(yourName);
 
   // キャラクター表示処理
   function showCharacter(index) {
@@ -15,11 +27,11 @@ $("#yourName").text(storage.name);
       case 0:
         $(setId + " #selectedCharacter .character").find("img")
           .attr({
-            "src": "./img/shujinko.jpg",
+            "src": "./img/shujinko.png",
             "alt": "主人公の画像"
           });
         $(setId + " #selectedCharacter .character").find("p")
-          .html("・"+storage.name+"<br>高校2年生<br>人に流されやすい性格<br>人に言われるがまま行動することが当たり前になっている<br>BL漫画が好き<br><br>");
+          .html("・"+yourName+"<br>高校2年生<br>人に流されやすい性格<br>人に言われるがまま行動することが当たり前になっている<br>BL漫画が好き<br><br>");
         break;
       case 1:
         $(setId + " #selectedCharacter .character").find("img")
@@ -28,25 +40,25 @@ $("#yourName").text(storage.name);
             "alt": "主人公の画像"
           });
         $(setId + " #selectedCharacter .character").find("p")
-          .html("・鏡の中の自分<br>突然鏡の中に現れ、自立して話しかけてくる<br>嫌味ったらしい性格<br>"+storage.name+"に苦言を呈してくるが、<br>心を読んでいるかのような、的確な指摘をしてくる<br><br>");
+          .html("・鏡の中の自分<br>突然鏡の中に現れ、自立して話しかけてくる<br>嫌味ったらしい性格<br>"+yourName+"に苦言を呈してくるが、<br>心を読んでいるかのような、的確な指摘をしてくる<br><br>");
         break;
       case 2:
         $(setId + " #selectedCharacter .character").find("img")
           .attr({
-            "src": "./img/cutegirl.jpg",
+            "src": "./img/cutegirl.png",
             "alt": "主人公の画像"
           });
         $(setId + " #selectedCharacter .character").find("p")
-          .html("・ヒロイン(みき)<br>"+storage.name+"が気になっている子<br>クラス一の美少女<br>大人しい性格だが、自分の意思をしっかり持っている<br>");
+          .html("・ヒロイン(みき)<br>"+yourName+"が気になっている子<br>クラス一の美少女<br>大人しい性格だが、自分の意思をしっかり持っている<br>");
         break;
       case 3:
         $(setId + " #selectedCharacter .character").find("img")
           .attr({
-            "src": "./img/friend.jpg",
+            "src": "./img/friend.png",
             "alt": "主人公の画像"
           });
         $(setId + " #selectedCharacter .character").find("p")
-          .html("・キテラ<br>"+storage.name+"の友人<br>長身・でぶ<br>自分の欲望に忠実な男<br>ある日、近所の祠を不注意で壊してから、<br>不審な行動に出るように…<br>");
+          .html("・キテラ<br>"+yourName+"の友人<br>長身・でぶ<br>自分の欲望に忠実な男<br>ある日、近所の祠を不注意で壊してから、<br>不審な行動に出るように…<br>");
         break;
     }
   }
@@ -101,7 +113,7 @@ $("#yourName").text(storage.name);
   }, 4000);
 
   setTimeout(function() {
-    $("#opText1").text("「こんにちは、" + storage.name + "くん」");
+    $("#opText1").text("「こんにちは、" + yourName + "くん」");
   }, 0);
 
   setTimeout(function() {
@@ -143,6 +155,7 @@ $("#yourName").text(storage.name);
     $("#mainContents").fadeIn();
   }, 11500);
 
+
   // Top Pageアイコン表示処理
   var topBtn = $('#page-top');
   topBtn.hide();
@@ -154,6 +167,7 @@ $("#yourName").text(storage.name);
       topBtn.fadeOut();
     }
   });
+
   //スクロールしてトップ
   topBtn.click(function() {
     $('body,html').animate({
@@ -161,4 +175,6 @@ $("#yourName").text(storage.name);
     }, 500);
     return false;
   });
+
+
 });

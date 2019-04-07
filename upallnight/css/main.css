@@ -225,6 +225,8 @@ section {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3%;
+  background: url("../img/back2.jpg") no-repeat;
+  background-position: center;
 }
 
 .character img {
@@ -233,14 +235,14 @@ section {
 }
 
 .character p {
-  background: url("../img/back2.jpg") no-repeat;
+
   margin-left: 5vw;
   width: 50vw;
 }
 
 #cnav {
-  width: 100%;
-  margin: 0 5%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #cnav ul {
@@ -256,6 +258,7 @@ section {
 #cnav ul li a {
   display: block;
   width: 100%;
+  text-align: center;
 }
 
 #cnav ul li.active {
