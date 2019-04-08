@@ -49,7 +49,7 @@ $("#yourName").text(yourName);
             "alt": "主人公の画像"
           });
         $(setId + " #selectedCharacter .character").find("p")
-          .html("・ヒロイン(みき)<br>"+yourName+"が気になっている子<br>クラス一の美少女<br>大人しい性格だが、自分の意思をしっかり持っている<br>");
+          .html("・みき<br>"+yourName+"が気になっている子<br>クラス一の美少女<br>大人しい性格だが、自分の意思をしっかり持っている<br>");
         break;
       case 3:
         $(setId + " #selectedCharacter .character").find("img")
@@ -110,7 +110,7 @@ $("#yourName").text(yourName);
 
   setTimeout(function() {
     $('#openning1').fadeOut("slow");
-  }, 4000);
+  }, 5000);
 
   setTimeout(function() {
     $("#opText1").text("「こんにちは、" + yourName + "くん」");
@@ -122,16 +122,16 @@ $("#yourName").text(yourName);
 
   setTimeout(function() {
     $("#opText1").text("高校2年の夏、その転機は突然訪れた…");
-  }, 3000);
+  }, 4000);
 
 
   setTimeout(function() {
     $("#opText2").html("変わるのは自分だ<br>変えるのは自分だ");
-  }, 5000);
+  }, 6000);
 
   setTimeout(function() {
     $("#opText2").html("全てはこれから始まる….");
-  }, 8000);
+  }, 9000);
 
   let timer2 = setInterval(function() {
     $('#openning2').animate({
@@ -142,7 +142,7 @@ $("#yourName").text(yourName);
 
   setTimeout(function() {
     $("#openning2").fadeIn();
-  }, 3000);
+  }, 3900);
 
 
   setTimeout(function() {
@@ -153,7 +153,7 @@ $("#yourName").text(yourName);
 
   setTimeout(function() {
     $("#mainContents").fadeIn();
-  }, 11500);
+  }, 12000);
 
 
   // Top Pageアイコン表示処理
