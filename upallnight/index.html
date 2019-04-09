@@ -8,9 +8,11 @@
   <meta name="keywords" content="Man In The Mirror,ゲーム,青春,高校生">
   <link rel="stylesheet" href="./css/resetCss.css" media="all">
   <link rel="stylesheet" href="./css/main.css" media="all">
-  <script type="text/javascript" src="./js/vendor/jquery-3.3.1.min.js"></script>
-  <script src="./js/vendor/jquery.ba-throttle-debounce.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.inview.min.js"></script>
+  <script src="./js/jquery.ba-throttle-debounce.min.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 </head>
 
 <body>
@@ -23,8 +25,8 @@
 
   <div id="mainContents">
     <header>
-      <p id="mainMessage"></p>
-      <p id="mainMessage"></p>
+      <p id="mainMessage1" class="animated" >最後の決断で</p>
+      <p id="mainMessage2" class="animated">必ず涙する</p>
     </header>
     <a class="menu">
       <span class="menu__line menu__line--top"></span>
@@ -46,28 +48,28 @@
         <div class="center_Box">
           <img src="./img/logo_story.png" alt="ストーリー"></div>
         <div class="layer-bg">
-          <p class="description">
+          <p class="animated inviewAction description">
             高校2年の夏、<br><br>
 
             決まらない進路<br>
             目的のない授業<br>
             親に行かされる習い事<br><br>
 
-            大切な青春の一瞬を言われるがままに過ごしてきた<br><br>
+            大切な青春の一瞬を<wbr>言われるがままに過ごしてきた<br><br>
 
             <strong>「こんにちは、<span id="yourName"></span>くん」</strong><br>
-            <strong>突然、話しかけてきたのは鏡の中の自分だった<br></strong><br>
+            <strong>突然、話しかけてきたのは<wbr>鏡の中の自分だった<br></strong><br>
 
             憎たらしい鏡の中の自分は、<br>
             自分とは正反対の性格<br><br>
 
-            拒絶しようにも、鏡の中にはいつも彼がいる<br><br>
+            拒絶しようにも、<wbr>鏡の中にはいつも彼がいる<br><br>
 
             不可思議な出来事の最中、<br>
-            自分を取り巻く環境・友人にも異変が起きていた<br><br>
+            自分を取り巻く環境・友人にも<wbr>異変が起きていた<br><br>
 
-            アンマッチな2人が心を通わす時、<br>
-            自ずと次の進むべき道が見えてくる<br><br>
+            アンマッチな2人が<wbr>心を通わす時、<br>
+            自ずと次の進むべき道が<wbr>見えてくる<br><br>
 
             <strong>選択するのは自分だ</strong><br>
             <strong>さあ、一歩を踏み出そう！！</strong><br>
@@ -81,7 +83,7 @@
         </div>
         <div id="allCharacter">
           <div id="selectedCharacter">
-            <div class="character">
+            <div class="animated inviewAction character">
               <img src="#" alt="#">
               <p></p>
             </div>
@@ -102,18 +104,19 @@
         </div>
         <div class="system-bg">
           <div class="system-cl">
-            <p class="description-system">
+            <p class="animated inviewAction description-system">
               <strong>最先端AIを駆使したMIMシステム</strong><br><br>
 
-              最初に入力したあなたの情報を元に、最新鋭のAIが鏡のあなた（自分の理想像）を作り出す<br><br>
+              最初に入力した<wbr>あなたの情報を元に、<br>
+              最新鋭のAIが鏡のあなた<wbr>（自分の理想像）を作り出す<br><br>
 
-              鏡のあなたは常にあなたを見ている<br><br>
+              鏡のあなたは常にあなたを<wbr>見ている<br><br>
 
-              あなたの普段の生活から鏡のあなたも変化する<br><br>
+              あなたの普段の生活から<wbr>鏡のあなたも変化する<br><br>
 
-              鏡のあなたと導き出した物語の結末は・・・<br><br>
+              鏡のあなたと導き出した<wbr>物語の結末は・・・<br><br>
 
-              この物語が終わる時、あなたに訪れる変化とは・・・<br><br>
+              この物語が終わる時、<wbr>あなたに訪れる変化とは・・・<br><br>
 
               変わるのは自分だ<br>
               変えるのは自分だ<br><br>
@@ -125,13 +128,13 @@
         <div class="center_Box">
           <img src="./img/logo_detail.png" alt="システム">
         </div>
-        <dl id="spec">
+        <dl id="spec" class="animated inviewAction">
           <dt>フォーマット</dt>
           <dd>PlayStation 6</dd>
           <dt>プレイ人数</dt>
           <dd>1人</dd>
           <dt>ジャンル</dt>
-          <dd>青春シュミレーションゲーム</dd>
+          <dd>追体験型青春SLG</dd>
           <dt>発売日</dt>
           <dd>未定</dd>
           <dt>価格</dt>
