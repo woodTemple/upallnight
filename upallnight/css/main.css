@@ -25,34 +25,33 @@ strong{
   #openning1 {
     width: 100%;
     height: 100%;
-    background-image: url("../img/opening1.jpg");
-    background-size: auto 100%;
-    background-position: center center;
+    background-image: url("../img/opening1-sp.jpg");
+    background-size: 100% 100%;
   }
 
   #openning2 {
     width: 100%;
     height: 100%;
-    background-image: url("../img/opening2.jpg");
-    background-size: 200% 200%;
+    background-image: url("../img/opening2-sp.jpg");
+    background-size: 100% auto;
     background-position: center 0%;
   }
 
   header {
     display: block;
     width: 100%;
-    height: 80vh;
     background-image: url("../img/head-sp.jpg");
-    background-size: 100% 100%;
+    padding-bottom: calc(974/750*100%);
+    background-size: 100% auto;
   }
 
   #mainMessage1{
-    top:32vh;
+    top:26vh;
     left: 75vw;
   }
 
   #mainMessage2{
-    top:32vh;
+    top:26vh;
     left: 25vw;
   }
 }
@@ -77,18 +76,19 @@ strong{
   header {
     display: block;
     width: 100%;
-    height: 80vh;
     background-image: url("../img/head.jpg");
-    background-size: 100% 100%;
+    padding-bottom: calc(627/1200*80%);
+    background-size: 100% auto;
   }
 
   #mainMessage1{
-    top:32vh;
-    left: 65vw;
+    /*TODO*/
+    top:calc((627/1200*100%)*0.5);
+    left: 75vw;
   }
 
   #mainMessage2{
-    top:32vh;
+    top:40vh;
     left: 25vw;
   }
 }
